@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Otchect.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Report</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="head_main_nav">
+                <a href="Main.html">
+                    <img src="Img/Home.svg" style="display: flex;">
+                </a>
+                <div class="head_nav">
+                    <a href="Main.html">Главная</a>
+                    <a href="Plus.html">Доходы</a>
+                    <a href="Minus.html">Расходы</a>
+                    <a href="Goals.html">Цели</a>
+                    <a href="Otchect.html">Отчеты</a>
+                </div>
+                <div class="head_nav" id="burgerMenu" style="display: none;">
+                    <a href="Main.html">Главная</a>
+                    <a href="Plus.html">Доходы</a>
+                    <a href="Minus.html">Расходы</a>
+                    <a href="Goals.html">Цели</a>
+                    <a href="Otchect.html">Отчеты</a>
+                </div>
+            </div>
+                <div class="head_log">
+                    <img src="Img/Sup.svg" id="sup" alt="sup">
+                    <p>Привет example@gmail.com</p>
+            </div>
+            <a class="burger_menu" id="burgerBtn">
+                <img src="Img/burger.svg" alt="">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main_plus">
+                <h1>Отчет</h1>
+                <a href="">
+                    <p>Сформулировать отчет</p>
+                </a>
+            </div>
+            <div class="card">
+                <div class="main_card_top" id="el1">
+                    <div class="card_top_HeadText">
+                        <p>Доходы</p>
+                        <a href="Plus.html">
+                            <img src="Img/Plus.svg" alt="">
+                        </a>
+                    </div>
+                    <p class="sum">0 ₽</p>
+                    <a href="Plus.html">Записать доход</a>
+                </div>
+                <div class="main_card_top" id="el2">
+                    <div class="card_top_HeadText">
+                        <p>Расходы</p>
+                        <a href="Minus.html">
+                            <img src="Img/Minus.svg" alt="">
+                        </a>
+                    </div>
+                    <p class="sum">0 ₽</p>
+                    <a href="Minus.html">Записать Расходы</a>
+                </div>
+                <div class="main_card_top" id="el3">
+                    <div class="card_top_HeadText">
+                        <p>Цели</p>
+                        <a href="Goals.html">
+                            <img src="Img/Wallet.svg" alt="">
+                        </a>
+                    </div>
+                    <p class="sum">0</p>
+                    <a href="Goals.html">Записать цель</a>
+                </div>
+                <div class="main_card_top" id="el4">
+                    <div class="card_top_HeadText">
+                        <p>Отчет</p>
+                        <a href="Otchect.html">
+                            <img src="Img/Grapgic.svg" alt="">
+                        </a>
+                    </div>
+                    <p class="sum">0</p>
+                    <a href="Otchect.html">Посмотреть отчет</a>
+                </div>
+            </div>
+            <div class="pluscard">
+                <div class="cardPlus">
+                    <p>Апрель</p>    
+                    <p>Доход: 75.000 ₽ </p>
+                    <p>Расход: 3.000 ₽</p>
+                    <p>Осталось: 73.000 ₽</p>
+                    <p>Осталось: 96%</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="Add_new_plus" id="supp">
+        <div class="plus_conteiner">
+            <div class="plus_body">
+                <p id="main">Форма обратной связи</p>
+                <form>
+                    <label>ФИО</label>
+                    <input id="fio" type="text" placeholder="Иванов Иван Иваныч" required>
+                    <label >Дата</label>
+                    <input id="date" type="date" required>
+                    <label >Тип ошибки</label>
+                    <input id="category" type="text" placeholder="Не рабочая форма" required>
+                    <label >Описание</label>
+                    <input id="valid" type="text" placeholder="Описание ошибки" required>
+                    <input type="submit"  id="subm" value="Записать"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="Add_new_plus" id="plus">
+        <a id="Add_plus"></a>
+        <a id="edit"></a>
+        <a id="del"></a>
+    </div>
+    <script src="JavaScript/indexx.js"></script>
+</body>
+</html>

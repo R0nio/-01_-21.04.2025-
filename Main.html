@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/style.css">    
+    <title>Main</title> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="head_main_nav">
+                <a href="Main.html">
+                    <img src="Img/Home.svg" style="display: flex;">
+                </a>    
+                <div class="head_nav">
+                    <a href="Main.html">Главная</a>
+                    <a href="Plus.html">Доходы</a>
+                    <a href="Minus.html">Расходы</a>
+                    <a href="Goals.html">Цели</a>
+                    <a href="Otchect.html">Отчеты</a>
+                </div>
+                <div class="head_nav" id="burgerMenu" style="display: none;">
+                    <a href="Main.html">Главная</a>
+                    <a href="Plus.html">Доходы</a>
+                    <a href="Minus.html">Расходы</a>
+                    <a href="Goals.html">Цели</a>
+                    <a href="Otchect.html">Отчеты</a>
+                </div>
+            </div>
+                <div class="head_log">
+                    <img src="Img/Sup.svg" id="sup" alt="sup">
+                    <p>Привет example@gmail.com</p>
+            </div>
+            <a class="burger_menu" id="burgerBtn">
+                <img src="Img/burger.svg" alt="">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card">
+                <div class="main_card_top">
+                    <div class="card_top_HeadText">
+                        <p>Доходы</p>
+                        <a href="Plus.html">
+                            <img src="Img/Plus.svg" alt="">
+                        </a>
+                    </div>
+                    <p class="sum">0 ₽</p>
+                    <a href="Plus.html">Записать доход</a>
+                </div>
+                <div class="main_card_top">
+                    <div class="card_top_HeadText">
+                        <p>Расходы</p>
+                        <a href="Minus.html">
+                            <img src="Img/Minus.svg" alt="">
+                        </a>
+                    </div>
+                    <p class="sum">0 ₽</p>
+                    <a href="Minus.html">Записать Расходы</a>
+                </div>
+                <div class="main_card_top">
+                    <div class="card_top_HeadText">
+                        <p>Цели</p>
+                        <a href="Goals.html">
+                            <img src="Img/Wallet.svg" alt="">
+                        </a>
+                    </div>
+                    <p class="sum">0</p>
+                    <a href="Goals.html">Записать цель</a>
+                </div>
+                <div class="main_card_top">
+                    <div class="card_top_HeadText">
+                        <p>Отчет</p>
+                        <a href="Otchect.html">
+                            <img src="Img/Grapgic.svg" alt="">
+                        </a>
+                    </div>
+                    <p class="sum">0</p>
+                    <a href="Otchect.html">Посмотреть отчет</a>
+                </div>
+            </div>
+            <h1>Последние Операции</h1>
+            <table>
+                <th id="t1">
+                    Дата
+                </th>
+                <th>
+                    Категория
+                </th>
+                <th>
+                    Описание
+                </th>
+                <th>
+                    Сумма
+                </th>
+                <th id="t5">
+                    Действие
+                </th>
+
+                <tr>
+                    <td>15 апр 2025</td>
+                    <td class="category">
+                        <a href="">
+                            <img src="Img/Money.svg" alt="">
+                        </a>
+                        <p>Зарплата</p>
+                    </td>
+                    <td>Зарплата</td>
+                    <td>+₽ 75,000</td>
+                    <td class="edit_del">
+                        <a id="edit">
+                            <img src="Img/Edit.svg" alt="">
+                        </a> 
+                        <a id="del">
+                            <img src="Img/bucket.svg" alt="">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <div class="edit" id="edit_panel">
+        <p>Редактирование</p>
+        <input type="date" placeholder="Дата" required>
+        <input type="text" placeholder="Категория" required>
+        <input type="text" placeholder="Описание" required>
+        <input type="text" placeholder="Сумма" required>
+        <input type="submit" value="Изменить" required>
+    </div>
+    <div class="del" id="del_panel">
+        <p>Удаление</p>
+        <label>Точно удалить?</label>
+        <input type="submit" value="Удалить">
+    </div>
+    <div class="Add_new_plus" id="plus">
+        <a id="Add_plus"></a>
+    </div>
+    <div class="Add_new_plus" id="supp">
+        <div class="plus_conteiner">
+            <div class="plus_body">
+                <p id="main">Форма обратной связи</p>
+                <form>
+                    <label>ФИО</label>
+                    <input id="fio" type="text" placeholder="Иванов Иван Иваныч" required>
+                    <label >Дата</label>
+                    <input id="date" type="date" required>
+                    <label >Тип ошибки</label>
+                    <input id="category" type="text" placeholder="Не рабочая форма" required>
+                    <label >Описание</label>
+                    <input id="valid" type="text" placeholder="Описание ошибки" required>
+                    <input type="submit"  id="subm" value="Записать"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="JavaScript/indexx.js"></script>
+</body>
+</html>
